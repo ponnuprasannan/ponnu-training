@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+// import Header from './Training/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import States from './Training/States';
+import { Container } from 'react-bootstrap';
 function App() {
+
+  const state = [
+    {name:"Kerala",language:"Malayalam",population:1000},
+    {name:"Tamilnadu",language:"Tamil",population:1000},
+    {name:"Karnataka",language:"Kannada",population:1000},
+
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Container>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hello Ponnuuu....
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       {/* <Header /> */}
+       <States states={state} />
+       </Container>
     </div>
+    
   );
 }
 
