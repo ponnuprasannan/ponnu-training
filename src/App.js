@@ -1,24 +1,26 @@
 import './App.css';
 // import Header from './Training/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import States from './Training/States';
+//import States from './Training/States';
 import { Container } from 'react-bootstrap';
+import Todo from './Todoapp/Todo';
 function App() {
 
-  const state = [
-    {name:"Kerala",language:"Malayalam",population:1000},
-    {name:"Tamilnadu",language:"Tamil",population:1000},
-    {name:"Karnataka",language:"Kannada",population:1000},
+  // const state = [
+  //   {name:"Kerala",language:"Malayalam",population:1000},
+  //   {name:"Tamilnadu",language:"Tamil",population:1000},
+  //   {name:"Karnataka",language:"Kannada",population:1000},
 
-  ]
+  // ]
   return (
     <div className="App">
       <Container>
-        <p>
+        {/* <p>
           Hello Ponnuuu....
-        </p>
+        </p> */}
        {/* <Header /> */}
-       <States states={state} />
+       {/* <States states={state} /> */}
+       <Todo />
        </Container>
     </div>
     
